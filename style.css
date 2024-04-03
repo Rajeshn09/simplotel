@@ -30,14 +30,42 @@ nav ul li a{
     width: 1.5em;
 }
 
-.HeroSection{
+
+.page2{
+    background-image: linear-gradient(to right,#c4c430,rgb(238, 169, 180));
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8.5em;
+    align-items: center;
+    justify-content: center;
+}
+.page2 img{
+    width: 80%;
+}
+.page20{
+    display: flex;
+    gap: 1em;
+    height: 500px;
+}
+.page21 img{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 300px;
+    overflow: hidden;
+}
+.page22 img{
+    width: 300px;
+    height: 515px;
+}
+.homepage{
     display: flex;
     background-image: linear-gradient(to right,#c4c430,rgb(238, 169, 180));
     width: 100%;
     height: 100vh;
     
 }
-.HeroLeft{
+.homeleft{
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -49,75 +77,50 @@ nav ul li a{
     text-align: justify;
 }
 
-.HeroLeft h1{
+.homeleft h1{
     font-size: 60px;
     letter-spacing: 3px;
     width: 80%;
 }
-.HeroLeft p{
+.homeleft p{
     padding-top: 3em;
     padding-bottom: 3em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80%;
 }
-.HeroLeft a{
+.homeleft a{
     display: inline-block;
     border: none;
+    margin-left: 4.5em;
     padding: 1em 5em;
     background-color: #fe7170;
     color: white;
 text-decoration: none;
 text-align: left;
+align-self: flex-start;
 }
-.HeroRight{
+.homeright{
     width: 50%;
     background-image: url("pexels-robin-stickel-70497.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.nextPage{
-    background-image: linear-gradient(to right,#c4c430,rgb(238, 169, 180));
-    display: flex;
-    flex-wrap: wrap;
-    padding: 8.5em;
-    align-items: center;
-    justify-content: center;
-}
-.nextPage img{
-    width: 80%;
-}
-.nxt{
-    display: flex;
-    gap: 1em;
-    height: 500px;
-}
-.nxt1 img{
-    display: flex;
-    flex-direction: column;
-    height: 250px;
-    width: 300px;
-    overflow: hidden;
-}
-.nxt2 img{
-    width: 300px;
-    height: 515px;
-}
 
-.nxt3{
+.page23{
 padding: 2em;
 background-color: #fe7170;
 margin: 1em;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-.nxt3 h1{
+.page23 h1{
     letter-spacing:5px;
     padding: 0.5em 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
 }
-.nxt3 a{
+.page23 a{
     text-decoration: none;
     color: black;
     align-items: center;
@@ -132,75 +135,6 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 20px;
 }
 
-
-
-
-@media only screen and (max-width: 430px) {
-.HeroSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-}
-.HeroLeft {
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-.HeroLeft p {
-    max-width: 100%;
-    text-align: justify;
-}
-.HeroLeft h1{
-    font-size: 60px;
-    letter-spacing: 3px;
-    width: 100%;
-    padding-top: 0.5em;
-}
-.HeroLeft p{
-  padding: 0.5em 0;
-}
-.HeroRight{
-    display: none;
-}
-.nextPage {
-padding: 1em 20px;
-display: flex;
-flex-direction: column;
-}
-.nxt{
-    display: flex;
-    flex-direction: column;
-}
-.nxt1 img,
-.nxt2 img {
-    max-width: 100%; 
-    height: auto;
-}
-
-.nxt3 {
-    text-align: center;
-    padding: 10px;
-    margin-top: 45em;
-    position: relative;
-    width: 80%;
-}
-.nxt3 h1{
-    letter-spacing:2px;
-    padding: 0.5em 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-}
-.nxt3 a{
-    text-decoration: none;
-    color: black;
-    align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-}
 @media only screen and (max-width: 430px) {
     nav{
         justify-content: right;
@@ -212,13 +146,13 @@ flex-direction: column;
         width: 1.5em;
         padding:0.5em ;
     }
-    .HeroSection {
+    .homepage {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 100%;
     }
-    .HeroLeft {
+    .homeleft {
         width: 100%;
         padding: 10px;
         display: flex;
@@ -226,57 +160,126 @@ flex-direction: column;
         justify-content: center;
         text-align: center;
     }
-    .HeroLeft p {
+    .homeleft p {
         max-width: 100%;
         text-align: justify;
     }
-    .HeroLeft h1{
+    .homeleft h1{
         font-size: 60px;
         letter-spacing: 3px;
         width: 100%;
         padding-top: 0.5em;
     }
-    .HeroLeft p{
+    .homeleft p{
       padding: 0.5em 0;
     }
-    .HeroRight{
+    .homeright{
         display: none;
     }
-    .nextPage {
+    .page2 {
     padding: 1em 20px;
     display: flex;
     flex-direction: column;
     }
-    .nxt{
+    .page20{
         display: flex;
         flex-direction: column;
     }
-    .nxt1 img,
-    .nxt2 img {
+    .page21 img,
+    .page22 img {
         max-width: 100%; 
         height: auto;
     }
     
-    .nxt3 {
+    .page23 {
         text-align: center;
         padding: 10px;
         margin-top: 45em;
         position: relative;
         width: 80%;
     }
-    .nxt3 h1{
+    .page23 h1{
         letter-spacing:2px;
         padding: 0.5em 0;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 25px;
     }
-    .nxt3 a{
+    .page23 a{
         text-decoration: none;
         color: black;
         align-items: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     }
+
+
+@media only screen and (max-width: 430px) {
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.homeleft {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.homeleft p {
+    max-width: 100%;
+    text-align: justify;
+}
+.homeleft h1{
+    font-size: 60px;
+    letter-spacing: 3px;
+    width: 100%;
+    padding-top: 0.5em;
+}
+.homeleft p{
+  padding: 0.5em 0;
+}
+.homeright{
+    display: none;
+}
+.page2 {
+padding: 1em 20px;
+display: flex;
+flex-direction: column;
+}
+.page20{
+    display: flex;
+    flex-direction: column;
+}
+.page21 img,
+.page22 img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.page23 {
+    text-align: center;
+    padding: 10px;
+    margin-top: 45em;
+    position: relative;
+    width: 80%;
+}
+.page23 h1{
+    letter-spacing:2px;
+    padding: 0.5em 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+.page23 a{
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+}
+
     @media only screen and (min-width: 431px) and (max-width: 800px) and (min-width: 768px) {
         nav{
             justify-content: right;
@@ -288,60 +291,60 @@ flex-direction: column;
             width: 1.5em;
             padding:0.5em 1em;
         }
-        .nxt3 {
+        .page23 {
             text-align: center;
             width: 80%;
             margin-top: 1em;
         }
     }
     @media only screen and (max-width: 1024px) {
-        .HeroSection {
+        .homepage {
             padding: 2em 1em;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
     
-        .HeroLeft,
-        .HeroRight {
+        .homeleft,
+        .homeright {
             width: 100%;
             text-align: center;
         }
     
-        .HeroLeft {
+        .homeleft {
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
         }
     
-        .HeroRight {
+        .homeright {
             flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
         }
     
-        .HeroRight img {
+        .homeright img {
             max-width: auto; 
             max-height: auto;
         }
     
-        .HeroLeft h1,
-        .HeroLeft p,
-        .HeroLeft a {
+        .homeleft h1,
+        .homeleft p,
+        .homeleft a {
             margin: 0; 
         }
     
-        .HeroLeft h1 {
+        .homeleft h1 {
             font-size: 2em;
         }
     
-        .HeroLeft p {
+        .homeleft p {
             font-size: 0.9em;
         }
     
-        .HeroLeft a {
+        .homeleft a {
             padding: 0.4em 0.8em;
         }
     }
