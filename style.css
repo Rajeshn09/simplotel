@@ -346,5 +346,6 @@ flex-direction: column;
     
         .homeleft a {
             padding: 0.4em 0.8em;
+            margin-left: 8em;
         }
     }
